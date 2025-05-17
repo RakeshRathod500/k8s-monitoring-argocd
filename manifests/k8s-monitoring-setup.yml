@@ -9,7 +9,7 @@ metadata:
   name: fastapi-app
   namespace: monitoring
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: fastapi-app
@@ -64,7 +64,7 @@ metadata:
   name: prometheus
   namespace: monitoring
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: prometheus
@@ -108,7 +108,7 @@ metadata:
   name: grafana
   namespace: monitoring
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: grafana
